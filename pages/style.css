@@ -1,0 +1,44 @@
+h1, p {
+    font-family: fantasy;
+    text-align: center;
+    color: green;
+}
+
+nav {
+    width: 100%;
+}
+
+main {
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 1em;
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__text h4 {
+    color: purple;
+}
+
+.short-bio {
+    padding: 5em;
+    border: 1px solid black;
+}
+
+section {
+    text-align: center;
+    margin: 2em 10em;
+}
