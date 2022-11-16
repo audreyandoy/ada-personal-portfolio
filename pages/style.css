@@ -34,8 +34,47 @@ footer {
 }
 
 .short-bio {
-    padding: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
     border: 1px solid black;
+    min-width: 30%; 
+    max-height: 60%;
+}
+
+.short-bio p{
+    width: 50%;
+    margin: 2em;
+}
+
+@media screen and (max-width:1046px) {
+    .short-bio {
+        display: block;
+        margin: 1em 0em;
+        padding: 10px;
+        overflow: clip;
+    }
+    
+    .short-bio p {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        margin: 10px;
+    }
+
+    img {
+        display: inline-block;
+    }
+
+    section {
+        margin: 2em;
+    }
+
+}
+
+img {
+    max-width: 40%;
 }
 
 section {
