@@ -135,3 +135,12 @@ section {
     background-color: blue;
     grid-column: 2 / 5;
 }
+
+
+@media screen and (max-width:500px) {
+    .main-grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+    }
+
+}
