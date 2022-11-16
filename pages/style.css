@@ -1,4 +1,5 @@
-h1, p {
+h1,
+p {
     font-family: fantasy;
     text-align: center;
     color: green;
@@ -14,6 +15,24 @@ main {
     min-height: calc(100vh-70px);
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightblue;
+    border: 5px black solid;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 3em;
+}
+
+
 ul {
     text-align: center;
 }
@@ -25,8 +44,6 @@ li {
 
 footer {
     text-align: center;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     height: 100px;
 }
@@ -36,10 +53,47 @@ footer {
 }
 
 .short-bio {
-    padding: 5em;
-    border: 1px solid black;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border: 1px solid black;
+    min-width: 30%;
+    max-height: 60%;
+}
+
+.short-bio p {
+    width: 50%;
+    margin: 2em;
+}
+
+@media screen and (max-width:1046px) {
+    .short-bio {
+        display: block;
+        margin: 1em 0em;
+        padding: 10px;
+        overflow: clip;
+    }
+
+    .short-bio p {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        margin: 10px;
+    }
+
+    img {
+        display: inline-block;
+    }
+
+    section {
+        margin: 2em;
+    }
+
+}
+
+img {
+    max-width: 40%;
 }
 
 section {
