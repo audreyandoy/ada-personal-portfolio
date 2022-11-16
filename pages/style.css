@@ -11,6 +11,7 @@ nav {
 main {
     text-align: center;
     margin: 0;
+    min-height: calc(100vh-70px);
 }
 
 ul {
@@ -27,6 +28,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 100px;
 }
 
 .footer__text h4 {
@@ -36,9 +38,47 @@ footer {
 .short-bio {
     padding: 5em;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
 }
 
 section {
     text-align: center;
     margin: 2em 10em;
 }
+
+img {
+    width: 40%;
+}
+
+@media screen and (max-width:1024px) {
+    .short-bio {
+        padding: 2em;
+        width: 60vw;
+        height: 50vh;
+        display: block;
+        align-items: center;
+        overflow: clip;
+    }
+
+    .short-bio p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    section {
+        margin: 2em;
+    }
+}
+
+@media screen and (max-width:320px) {
+    body {
+        background-color: pink;
+    }
+}
+
+/* @media screen and (min-width:500px) {
+    body {
+        background-color: red;
+    }
+} */
